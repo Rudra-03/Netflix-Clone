@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  font-family: Inter;
+  letter-spacing: 0.1rem;
+  display: grid;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(15, 15, 15, 0.678), rgba(0, 0, 0, 0.767)), url(images/header-image.png);
+  background-size: cover;
+  width: 100%;
+  height: 110vh;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30%;
+}
+.header .nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+.header .nav-logo {
+  width: 150px;
+}
+.header .nav-text {
+  display: flex;
+  gap: 22px;
+}
+.header .nav-text-1 {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.header .nav-text-1 i {
+  font-size: 18px;
+}
+.header .nav-text-1 select {
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+.header .nav-text-1 select option {
+  color: black;
+}
+.header .nav-text button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 13px;
+  font-weight: 650;
+}
+.header-content {
+  margin: 0px auto;
+}
+.header-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+.header-content h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+.header-content h4 {
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+}
+.header-content .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0px;
+  width: 100%;
+}
+.header-content .text input {
+  height: 50px;
+  min-width: 30vw;
+  padding: 0px 15px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.664);
+  font-size: 1rem;
+  font-weight: 700;
+  flex-grow: 1;
+}
+.header-content .text button {
+  background-color: rgb(255, 17, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.header-content .text button i {
+  align-items: center;
+  font-size: 25px;
+}
+
+.main .box {
+  height: 80vh;
+  background-color: black;
+  color: white;
+  margin: 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 72px 0px;
+}
+.main .box-content {
+  width: 45%;
+}
+.main .box-content h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.main .box-content p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.main .box-image {
+  height: 100%;
+  width: 35%;
+}
+.main .box-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-1 {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 0px;
+  margin-bottom: 8px;
+}
+.footer-1-content {
+  width: 75%;
+}
+.footer-1-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footer-1-content [class^=faq-] {
+  width: 100%;
+  height: 80px;
+  background-color: #2d2d2d;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.footer-1-content [class^=faq-] i {
+  font-size: 50px;
+}
+.footer-1-content [class^=faq-]:hover {
+  background-color: #4e4e4e;
+  cursor: pointer;
+}
+.footer-1-content .signin {
+  margin-top: 50px;
+  width: 100%;
+}
+.footer-1-content .signin p {
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+}
+.footer-1-content .signin .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0px;
+  width: 100%;
+}
+.footer-1-content .signin .text input {
+  height: 50px;
+  width: 30vw;
+  padding: 0px 15px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.664);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer-1-content .signin .text button {
+  background-color: rgb(255, 17, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-1-content .signin .text button i {
+  align-items: center;
+  font-size: 26px;
+}
+
+.footer-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 0px;
+  background-color: black;
+}
+.footer-2-content {
+  width: 75%;
+}
+.footer-2-content a {
+  color: antiquewhite;
+}
+.footer-2-content .links {
+  margin-top: 35px;
+}
+.footer-2-content .links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  line-height: 30px;
+}
+.footer-2-content .text {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 30px 0px;
+}
+.footer-2-content .text i {
+  font-size: 18px;
+}
+.footer-2-content .text select {
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+.footer-2-content .text select option {
+  color: black;
+}
+.footer-2-content p {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
